@@ -8,20 +8,25 @@
     <script src="main.js"></script>
     <title>Document</title>
 </head>
-<h1>Ejercicio #4 la anterior era la 3 </h1>
+<h1>Ejercicio #6 </h1>
 
 <body>
     <script>
-        var cont, d, p;
-        cont = 0;
-
-        while (cont <= 18) {
-            d = Number.parseInt(input("INGRESE EL NUMERO DE CABALLEROS CON EL QUE BAILO"));
-            p = Number.parseInt(input("INGRESE EL NUMERO DEL PUESTO EN EL CUAL BAILO"));
-            cont += 1;
+        var cont, g, k, p, vuelo;
+        cont = 1;
+        while ((cont <= 2)) {
+            p = Number.parseFloat(input("COLOQUE LA VELOCIDAD A LA QUE PILOTEA:"));
+            g = Number.parseFloat(input("COLOQUE LOS GRADOS A LOS CUALES PILOTEA:"));
+            k = Number.parseFloat(input("COLOQUE LOS KILOMETROS A LOS QUE SE DIRIGE"));
+            console.log("SE CALCULARA EL TOTAL DE MTS Y DISTANCIA DEL PROYECTIL");
+            vuelo = ((p * g) / k);
+            console.log("LA DISTANCIA QUE SEPARA EL AVION DEL PROYECTIL EN MTS ES: ", vuelo);
         }
-
-        alert("EL NUMERO TOTAL DE DAMAS QUE AISTIERON AL EVENTO SON: 18 ");
+        if ((k >= 10000)) {
+            console.log("EL PROYECTIL LLEVA UNA TRAYECTORIA CORRECTA");
+            break;
+        }
+        alert("SU PROGRAMA DE VUELO A FINALIZADO");
 
     </script>
 </body>
