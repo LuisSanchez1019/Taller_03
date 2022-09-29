@@ -8,24 +8,31 @@
     <script src="main.js"></script>
     <title>Document</title>
 </head>
-<h1>Ejercicio #7 </h1>
+<h1>Ejercicio #8 </h1>
 
 <body>
     <script>
-        var cont, s, t, total;
+        var cae, can, cbd, ce, cf, clbd, clf, cont, cre, met1, met2, met3, pon;
         cont = 1;
+        can = Number.parseInt(input("DIGITE EL NUMERO DE ESTUDIANTES "));
+        cf = Number.parseInt(input("DIGITE EL CREDITO DE LA MATERIA DE FUNDAMENTOS "));
+        cbd = Number.parseInt(input("DIGITE LOS FUNDAMENTOS DE LA MATERIA BD"));
+        ce = Number.parseInt(input("DIGITE LOS CREDITOS DE LA ASIGNATURA DE ETICA"));
 
-        while (cont <= 5) {
-            t = Number.parseFloat(input("INGRESE EL VALOR DE VENTAS QUE HIZO:"));
-            s = Number.parseFloat(input("INGRESE EL SUELDO DEL TRABAJADOR:"));
-            total = s + t * 0.1;
-            console.log("EL VALOR DE VENTA DE LAS COMISIONES ES: ", t * 0.1);
-            console.log("EL TOTAL CON SUELDO Y COMISIONES INCLUIDAS ES ", total);
+        while (cont <= can) {
+            clf = Number.parseFloat(input("DIGITE LA CALIFICACION DE LA MATERIA FUNDAMENTOS"));
+            clbd = Number.parseFloat(input("DIGITE LA CALIFICACION DE LA MATERIA BD"));
+            cae = Number.parseFloat(input("DIGITE LA CALIFICACION DE LA ASIGNATURA DE ETICA "));
+            met1 = clf * cbd;
+            met2 = clbd * cbd;
+            met3 = cae * ce;
+            cre = cf + cbd + ce;
+            pon = (met1 + met2 + met3) / cre;
+            console.log("EL PROMEDIO PONDERADO ES ", pon);
             cont += 1;
         }
 
-        console.log("FIN DEL PROGRAMA");
-
+        console.log("EL PROGRAMA A FINALIZADO :D");
     </script>
 </body>
 
