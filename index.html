@@ -8,31 +8,38 @@
     <script src="main.js"></script>
     <title>Document</title>
 </head>
-<h1>Ejercicio #8 </h1>
+<h1>Ejercicio #10 </h1>
 
 <body>
     <script>
-        var cae, can, cbd, ce, cf, clbd, clf, cont, cre, met1, met2, met3, pon;
+        var can, cont, pla;
         cont = 1;
-        can = Number.parseInt(input("DIGITE EL NUMERO DE ESTUDIANTES "));
-        cf = Number.parseInt(input("DIGITE EL CREDITO DE LA MATERIA DE FUNDAMENTOS "));
-        cbd = Number.parseInt(input("DIGITE LOS FUNDAMENTOS DE LA MATERIA BD"));
-        ce = Number.parseInt(input("DIGITE LOS CREDITOS DE LA ASIGNATURA DE ETICA"));
-
-        while (cont <= can) {
-            clf = Number.parseFloat(input("DIGITE LA CALIFICACION DE LA MATERIA FUNDAMENTOS"));
-            clbd = Number.parseFloat(input("DIGITE LA CALIFICACION DE LA MATERIA BD"));
-            cae = Number.parseFloat(input("DIGITE LA CALIFICACION DE LA ASIGNATURA DE ETICA "));
-            met1 = clf * cbd;
-            met2 = clbd * cbd;
-            met3 = cae * ce;
-            cre = cf + cbd + ce;
-            pon = (met1 + met2 + met3) / cre;
-            console.log("EL PROMEDIO PONDERADO ES ", pon);
-            cont += 1;
+        can = Number.parseInt(input("CANTIDAD DE AUTOMOVILES QUE ENTRARRON A LA CAPITAL: "));
+        while ((con <= can)) {
+            pla = Number.parseInt(input("DIGITE EL UTIMO DIGITO DE LA PLACA"));
+            if (((plac === 1) || (plac === 2))) {
+                alert("SU COLOR ES AMARILLA");
+            } else {
+                if (((plac === 3) || (plac === 4))) {
+                    alert("SU COLOR ES ROSA");
+                } else {
+                    if (((plac === 5) || (plac === 6))) {
+                        alert("SU COLOR ES ROJO");
+                    } else {
+                        if (((plac === 7) || (plac === 8))) {
+                            alert("SU COLOR ES VERDE");
+                        } else {
+                            if (((pla === 9) || (pla === 0))) {
+                                alert("SU COLOR ES AZUL");
+                            } else {
+                                alert("ERROR DE DIGITACION COMIENCE DE NUEVO D:");
+                            }
+                        }
+                    }
+                }
+            }
         }
 
-        console.log("EL PROGRAMA A FINALIZADO :D");
     </script>
 </body>
 
