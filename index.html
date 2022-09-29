@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var al, ca, calidad, cont, hv, pe, precio;
+        ca = Number.parseInt(input("INGRESE EL NUMERO DE GALLINAS"));
+        cont = 1;
+
+        while (cont <= ca) {
+            pe = Number.parseInt(input("INGRESE EL PESO DE LA GALLINA(S) EN KILOS"));
+            al = Number.parseInt(input("INGRESE LA ALTURA DE LA GALLINA EN CM"));
+            hv = Number.parseInt(input("INGRESE EL NUMEROS DE HUEVOS"));
+            calidad = pe * al / hv;
+            console.log("LA CALIDAD DE HUEVO DE LA GALLINA ES $", calidad);
+            precio = calidad * 1000;
+            console.log("EL PRECIO DE VENTA POR KILO DE HUEVO ES ", precio);
+            cont += 1;
+        }
+
+        console.log("EL PROGRAMA A CADUCADO");
+    </script>
+</body>
+
+</html>
